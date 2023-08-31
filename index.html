@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>personal portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <!-- ****Header section***** -->
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="preeti_logo.jpg"  class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>UI/UX DESIGNER</p>
+                <h1>HI, I AM <span>PREETI</span><br> FROM INDIA</h1>
+            </div>
+        </div>
+    </div>
+
+<!--*********** About section******** -->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images\user.png" >
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About me</h1>
+                    <p>Recent BCA graduate with a strong foundation in HTML, CSS, Java, and SQL.
+
+                        Eager to leverage technical skills to develop dynamic and user-friendly web applications. 
+                       
+                       Detail-oriented and committed to writing clean, efficient code. 
+                       
+                       Excited to contribute to collaborative projects and continue learning in a fast-paced tech environment.
+                       
+                        Open to opportunities to grow and make a meaningful impact in the world of software development.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('Education')">Education</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id ="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing web app interfaces</li>
+                            <li><span>web development</span><br>web app development</li>
+                            <li><span>App development</span><br>Building IOS/Android apps</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents " id ="experience">
+                        <ul>
+                            <li><span>1 sep 2023-30 sep 2023</span><br>Codeclause</li>
+                            <li><span>1 August 2023-31 august 2023</span><br>Bharat Intern.</li>
+                            <li><span>jan 2023-july2023</span><br>Appsquadz pvt ltd.</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents " id ="education">
+                        <ul>
+                            <li><span>BCA</span><br>2023</li>
+                            <li><span>12th</span><br>2020</li>
+                            
+                        </ul>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- *****Services section****** -->
+
+    <div id="services">
+        <div class="container">
+          <h1 class="subtitle">My services</h1>
+            <div class="services-list">
+
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p><ul>
+                        <li>Developed responsive and user-friendly web interfaces using HTML, CSS, and JavaScript.</li>
+                        <li>Worked on enhancing the visual appeal and user experience of existing web applications.</li>
+                    </ul></p>
+                    <a href="#">Learn more</a>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>UI/UX Design</h2>
+                    <p><ul>
+                        <li>User interface design or user interface engineering is the design of user interfaces for machines and software, such as computers, home appliances, mobile devices, and other electronic devices.</li>
+                        <li>with the focus on maximizing usability and the user experience.</li>
+                     </ul>
+                </p>
+                    <a href="#">Learn more</a>
+                </div>
+
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>App Design</h2>
+                    <p><ul>
+                        <li>Collaborated with the development team to implement and test Java-based functionalities.</li>
+                        <li>Participated in code reviews and debugging sessions, contributing to the refinement of software</li>
+                    </ul>
+                        </p>
+                    <a href="#">Learn more</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+<!--********* Portfolio section***** -->
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png" >
+                    <div class="layer">
+                        <h3>Netflix Clone</h3>
+                        <p> <ul>
+                            <li>Created a visually accurate replica of the Netflix homepage using HTML and CSS.</li>
+                            <li>Focused on responsive design principles to ensure compatibility across various devices</li>
+                           </ul>
+                        </p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                
+                <div class="work">
+                    <img src="images/work-2.png" >
+                    <div class="layer">
+                        <h3>Temperature Converter</h3>
+                    </p> <ul>
+                            <li>Developed a temperature converter application using HTML, CSS, and JavaScript.</li>
+                            <li>Allowed users to convert between Celsius and Fahrenheit with real-time updates.</li>
+                          </ul>
+                    </p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="images/work-3.png" >
+                    <div class="layer">
+                        <h3>Portfolio Website</h3>
+                    <p> <ul>
+                            <li>Designed and developed a personal portfolio website showcasing my projects and skills.</li>
+                            <li>Utilized HTML, CSS, and JavaScript to create an interactive and visually appealing online presence</li>
+                        </ul>
+                     </p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+<!-- *******Contact section****** -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>preetifastinfo@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i>8595833690</p>
+
+                    <div class="social-icons">
+                        <a href="https://github.com/Preetiya"><i class="fa-brands fa-square-github"></i></a>
+                        <a href="https://www.linkedin.com/in/preetiyadavunshi"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://www.facebook.com/profile.php?id=100055100904163&mibextid=2JQ9oc"><i class="fa-brands fa-square-facebook"></i></a>
+                        <a href="https://twitter.com/preetiy13271973?t=STN38M5PxCJTcIWVhVUJTA&s=09"><i class="fa-brands fa-square-twitter"></i></a>
+                    </div>
+
+                    <a href="Preeti_resume_supreme.pdf" download class="btn btn2">Download CV</a>
+                </div>
+
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="your name" required>
+                        <input type="email" name="Email" placeholder="your email" required>
+                        <textarea name="Message"  rows="6" placeholder="your Message"></textarea>
+                       <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>Copyright &COPY; Preeti.All rights reserved.</p>
+        </div>
+    </div>
+
+    <script>
+        var tablinks=document.getElementsByClassName("tab-links");
+        var tabcontents =document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+
+            for (tablink of tablinks){
+                tablink.classList.remove("active-link");
+
+            }
+            for (tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+                
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+           }
+
+    </script>
+    <script>
+        var sidemeu=document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemeu.style.right="0";
+        }
+        function closemenu(){
+            sidemeu.style.right="-200px";
+        }
+</script>
+
+    <script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycby1IpDl-7XihO0bZ4sHBBOyQzC2n-OxOqWLbsVexPDbhW8AeaOp0PhlBxZRk1MwGQDu/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg =document.getElementById("msg")
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        msg.innerHtml = "Message sent successfully"
+        setTimeout(function(){
+            msg.innerHTML=" "
+
+        },5000)
+        form.reset()
+    })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+</body>
+</html>
